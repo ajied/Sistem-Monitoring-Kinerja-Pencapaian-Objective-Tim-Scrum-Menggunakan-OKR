@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.hero-bg {
+    background: url('../img/ifferent-1612348893426-9878.jpg');
+    text-align: center;
+}
+
+header {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 3em;
+}
+
+.login-box {
+    background-color: white;
+    width: 400px;
+    height: 700px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -350px;
+    margin-left: -200px;
+    
+} 
+
+.login-text {
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+.login-info {
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+input[type="text"]{
+    background-color:#CFCFCF;
+    border: none;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    
+}
+
+input[type="button"] {
+    background-color: #21134E;
+    width: 70%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+
+
