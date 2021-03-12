@@ -75,12 +75,12 @@ input[type="button"] {
     transition: 0.5s;
 }
 .sidenav a {
-    padding: 2em, 2em, 2em, 5em;
+    padding: 21em, 2em, 2em, 5em;
     text-decoration: none;
-    font-size: 25;
+    font-size: 28;
     color: white;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s;  
 }
 .sidenav a:hover{
     color: #f1f1f1;
@@ -91,6 +91,10 @@ input[type="button"] {
     right: 25px;
     font-size: 25px;
     margin-left: 50px;
+}
+.navicon {
+    width: 60px;
+    height: 40px;
 }
 
 
