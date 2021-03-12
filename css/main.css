@@ -16,6 +16,7 @@ header {
     margin-bottom: 3em;
 }
 
+/* login box still need fixing, cuz diffrent resolution make it braeking apart*/
 .login-box {
     background-color: white;
     width: 25em;
@@ -60,6 +61,7 @@ input[type="button"] {
     font-size: 1.3em;
     cursor: pointer;
 }
+
 
 
 
