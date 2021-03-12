@@ -18,14 +18,12 @@ header {
 
 .login-box {
     background-color: white;
-    width: 400px;
-    height: 700px;
-    position: fixed;
-    top:50%;
-    left:50%;
-    margin-top: -350px;
-    margin-left: -200px;
-    
+    width: 25em;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    margin-top:-13em;
+    margin-left:-12em;  
 } 
 
 .login-text {
