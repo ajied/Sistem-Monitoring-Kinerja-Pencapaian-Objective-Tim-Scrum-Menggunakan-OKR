@@ -51,17 +51,71 @@ body {
     border:solid 1px;
     margin-top: 3em;
     margin-left: 1em;
-    width: 60%;
+    width: 72%;
     background-color: #E7E7E7;
 }
 tr td {
     border:solid 1px;
 }
 
-.quarter {
-    margin-top: 3em;
-    border:solid 1px;
-    float: right;
+.objective_width {
+    width: 450px;
+}
+.progress_width {
+    width: 100px;
+}
+.objfull_width {
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.progressbar_percentage {
+    text-align: right;
 }
 
+.text_align {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
 
+.obj_title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Quarter box */
+
+.quarter {
+    width: 25.5%;
+    margin-top: 2.65em;
+    border:solid 1px;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*button */
+.button_wraper {
+    margin-top: 3em;
+    margin-left: 2em;
+}
+.new_obj {
+    background-color: #354C9D;
+    color: white;
+    padding: .5em;
+    border-radius: .2em;
+    border-style: none;
+    margin-right: 1em;
+    cursor: pointer;
+}
+.rmv_obj {
+    background-color: #EB5757;
+    color: white;
+    padding: .5em;
+    border-radius: .2em;
+    border-style: none;
+    cursor: pointer;
+}
