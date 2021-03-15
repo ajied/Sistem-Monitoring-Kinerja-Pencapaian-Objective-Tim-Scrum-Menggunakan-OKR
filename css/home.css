@@ -28,3 +28,26 @@ body {
     height: 100%;
     width: 4px;
 }
+
+/*button */
+.button_wraper {
+    margin-top: 3em;
+    margin-left: 20em;
+}
+.add_team {
+    background-color: #354C9D;
+    color: white;
+    padding: .5em;
+    border-radius: .2em;
+    border-style: none;
+    margin-right: 1em;
+    cursor: pointer;
+}
+.rmv_team {
+    background-color: #EB5757;
+    color: white;
+    padding: .5em;
+    border-radius: .2em;
+    border-style: none;
+    cursor: pointer;
+}
