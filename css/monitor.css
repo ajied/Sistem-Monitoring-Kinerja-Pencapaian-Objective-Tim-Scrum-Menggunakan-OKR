@@ -4,3 +4,64 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+#heading {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-top: -2em;
+}
+
+.teamcontainer {
+    display:flex;
+}
+/* Teamname and Quarter box */
+.teamname {
+    text-align: left;
+    background-color: #1E3F57;
+    color: white;
+    width: 20em;
+    font-size: 20px;
+    margin-top: 3em;
+    margin-left: 1em;
+    padding: .5em;
+    border-radius: .2em;
+}
+.spacer {
+    width: 50em;
+}
+.quarterbox {
+    text-align: center;
+    background-color: #CECECE;
+    width: 20em;
+    font-size: 20px;
+    margin-top: 3em;
+    margin-right: 1em;
+    border-radius: .2em;
+    padding: .5em;
+    float: right;
+}
+
+/*objective box*/
+.table_container {
+    display: flex;
+}
+.objective {
+    border:solid 1px;
+    margin-top: 3em;
+    margin-left: 1em;
+    width: 60%;
+    background-color: #E7E7E7;
+}
+tr td {
+    border:solid 1px;
+}
+
+.quarter {
+    margin-top: 3em;
+    border:solid 1px;
+    float: right;
+}
+
+
