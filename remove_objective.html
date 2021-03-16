@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Objective</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/input.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+    <script>
+        function openNav() {
+            document.getElementById("thissidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("thissidenav").style.width="0px";
+        }
+        
+    </script>
+    
+    <nav>
+        <div id=thissidenav class=sidenav>
+            <a href="javascript:void(0)" class=closebtn onclick="closeNav()">&times;</a>
+
+            <div class=usernav>
+                <a href=#><img src="img/nav/chrome_2021-03-12_15-03-48.png" class=profilenav></a> 
+                <a href=# class=namenav>Name..</a>
+            </div>
+            <a href=home.html>Home</a>
+            <a href=account.html>Account Settings</a>
+            <a href=index.html class="logout">Logout</a>    
+        </div>
+    </nav>
+
+    <div id="heading">
+        <a href=#><img src="img/nav/threelines.png" onclick="openNav()" class=navicon></span></a>
+        <div class="title">Remove Objective</div>
+    </div>
+
+    <div>
+        <input type="button" id=deleteObjective name=deleteObejctive value="Delete Objective"></a>
+        <input type="button" id=save_button name=save value="Save">
+        <a href=monitor.html><input type="button" id=cancel_button name=cancel value="Cancel"></a>
+    </div>
+
+</body>
+</html>
