@@ -85,3 +85,7 @@ input[type="button"] {
     float:right;
     margin-top: 1em;
 }
+#deleteKeyResult {
+    background-color: #EB5757;
+    color: white;
+}
