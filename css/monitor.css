@@ -54,10 +54,9 @@ body {
 .table_container {
     display: flex;
     margin-top: 1em;
-
+    padding: 0;;
 }
 .objective {
-    border:solid 1px;
     margin-top: 3em;
     margin-left: 1em;
     width: 55.5%;
@@ -65,6 +64,8 @@ body {
 }
 tr td {
     border:solid 1px;
+    border-color: white;
+    padding:0px;
 }
 
 .objfull_width {
@@ -99,6 +100,7 @@ tr td {
     text-align: center;
     font-size: 18px;
     position: relative;
+    background-color: #E7E7E7;
 }
 
 /*total objective fulfillment box*/
@@ -112,6 +114,10 @@ tr td {
 .total_progressbar_percentage {
     width: 230px;
 }
+
+/*progress bar */
+
+
 
 /*button */
 .button_wraper {
