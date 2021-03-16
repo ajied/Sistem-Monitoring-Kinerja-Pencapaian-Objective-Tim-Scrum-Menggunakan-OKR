@@ -101,10 +101,23 @@ tr td {
     position: relative;
 }
 
+/*total objective fulfillment box*/
+.total_objective_fulfillment {
+    margin-top: 1em;
+    margin-left: 31.6em;
+}
+.total_objective_full_width{
+    width: 250px;
+}
+.total_progressbar_percentage {
+    width: 230px;
+}
+
 /*button */
 .button_wraper {
     margin-top: 3em;
     margin-left: 2em;
+    margin-bottom: 2em;
 }
 .new_obj {
     background-color: #354C9D;

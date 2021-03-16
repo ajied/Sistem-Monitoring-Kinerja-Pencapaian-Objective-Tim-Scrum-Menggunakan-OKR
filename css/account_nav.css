@@ -40,18 +40,16 @@ body {
     width: 60px;
     height: 40px;
 }
-.logout {
-    position: fixed;
-    bottom: 0px;
+.sidenav .logout {
+    margin-top: 144%;
     margin-bottom: 3em;
-
 }
+
 .usernav{
     color: #181818;
     z-index: 2;
 }
 .profilenav{
-
     height: 100px;
     width: 100px;
     border-radius: 50%;
