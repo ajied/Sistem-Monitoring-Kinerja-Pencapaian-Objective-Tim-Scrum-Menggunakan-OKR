@@ -46,14 +46,13 @@ body {
 /* objective fulfillment */
 .objective_fulfillment {
     border:solid 1px;
-    width: 230px;
+    width: 200px;
 }
 
 /*objective box*/
 .table_container {
     display: flex;
     margin-top: 1em;
-    
 }
 .objective {
     border:solid 1px;
@@ -85,19 +84,18 @@ tr td {
     font-size: 18px;
     width: 500px;
 }
-.obj_spacer {
-    width: 10px;
-}
 /* Quarter month */
 
 .quarter {
-    width: 25%;
+    width: 25.5%;
     margin-top: 1em;
     border:solid 1px;
     float: right;
     text-align: center;
+    font-weight: bold;
     font-size: 18px;
 }
+
 
 /*button */
 .button_wraper {
@@ -123,3 +121,14 @@ tr td {
 } 
 
 
+
+/*usind div table
+.wraper {
+    width: 600px;
+    background-color: grey;
+    margin-left: 1.2em;
+}
+.row_title {
+    overflow: hidden;
+}
+*/
