@@ -25,8 +25,9 @@
         function closeNav() {
             document.getElementById("thissidenav").style.width="0px";
         }
+        
     </script>
-
+    
     <nav>
         <div id=thissidenav class=sidenav>
             <a href="javascript:void(0)" class=closebtn onclick="closeNav()">&times;</a>
@@ -66,10 +67,10 @@
       var new_input="<input type='text' id='new_kr' placeholder='New Key Result...'"+new_chq_no+"'>";
       $('#inputForm').append(new_input);
       $('#total_chq').val(new_chq_no)
-    }
+        }
     </script>
 
-    <div class=input_field>
+    <div class="input_field">
         <div class=input id=inputForm>
             <input type="text" id=new_obj required placeholder="New Objective..."></input>
             <input type="text" id=new_kr required placeholder="New Key Result"></input>
