@@ -34,8 +34,7 @@ header {
 }
 
 input[type="text"]{
-    background-color:#CFCFCF;
-    border: none;
+    border: solid 1px;
     width: 100%;
     padding: .5em;
     box-sizing: border-box;
