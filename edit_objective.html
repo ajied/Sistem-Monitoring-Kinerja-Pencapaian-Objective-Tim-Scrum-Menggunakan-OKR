@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Objective</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/input.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+    <script>
+        function openNav() {
+            document.getElementById("thissidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("thissidenav").style.width="0px";
+        }
+        
+    </script>
+    
+    <nav>
+        <div id=thissidenav class=sidenav>
+            <a href="javascript:void(0)" class=closebtn onclick="closeNav()">&times;</a>
+
+            <div class=usernav>
+                <a href=#><img src="img/nav/chrome_2021-03-12_15-03-48.png" class=profilenav></a> 
+                <a href=# class=namenav>Name..</a>
+            </div>
+            <a href=home.html>Home</a>
+            <a href=account.html>Account Settings</a>
+            <a href=index.html class="logout">Logout</a>    
+        </div>
+    </nav>
+
+    <div id="heading">
+        <a href=#><img src="img/nav/threelines.png" onclick="openNav()" class=navicon></span></a>
+        <div class="title">New Objective</div>
+    </div>
+   <!--
+    <script>
+        function createKeyResultField() {
+            var input = document.createElement('input');
+            input.type ='text';
+            input.name = 'keyresult';
+            return input;
+        }
+        var inputField = document.getElementById('inputForm');
+        document.getElementById('newKeyResultButton').addEventListener('click', function(e) {form.appendChild(createKeyResultField());
+        });
+
+    </script>
+    -->
+    
+    <script>
+        function add(){
+      var new_chq_no = parseInt($('#total_chq').val())+1;
+      var new_input="<input type='text' id='new_kr' placeholder='New Key Result...'"+new_chq_no+"'>";
+      $('#inputForm').append(new_input);
+      $('#total_chq').val(new_chq_no)
+        }
+    </script>
+
+    <div class="input_field">
+        <div class=input id=inputForm>
+            <input type="text" id=new_obj required placeholder="Existing Objective name"></input>
+            <input type="text" id=new_kr required placeholder="Existing Key Result name"></input>
+            <div class="delete-button">
+                x
+            </div>
+        </div>
+        <input type="button" id=newKeyResultButton name=new_kr_add_btn value="Add new Key Result" onclick=add()>
+
+        <div class=input_btn>
+            <select name=selectQuarter id=selectQuarter class=quarter_select>
+                <option value="quarter1">Quarter 1</option>
+                <option value="quarter2">Quarter 2</option>
+                <option value="quarter3">Quarter 3</option>
+                <option value="quarter4">Quarter 4</option>
+            </select>
+
+<!--Quarter button
+            <input type="button" id=select_quarter_button name=select_quarter value="Select Quarter">
+-->
+
+            <input type="button" id=save_button name=save value="Save">
+            <a href=monitor.html><input type="button" id=cancel_button name=cancel value="Cancel"></a>
+        </div>
+
+    </div>
+
+    <!-- the code snipets for adding new text field
+        function add(){
+      var new_chq_no = parseInt($('#total_chq').val())+1;
+      var new_input="<input type='text' id='new_"+new_chq_no+"'>";
+      $('#new_chq').append(new_input);
+      $('#total_chq').val(new_chq_no)
+    }
+    function remove(){
+      var last_chq_no = $('#total_chq').val();
+      if(last_chq_no>1){
+        $('#new_'+last_chq_no).remove();
+        $('#total_chq').val(last_chq_no-1);
+      }
+    }
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <input type="text">
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">remove</button>
+    <div id="new_chq"></div>
+    <input type="hidden" value="1" id="total_chq">
+
+    -->
+
+</body>
+</html>
