@@ -49,6 +49,20 @@ input[type="button"] {
     margin-left: -.2em;
 }
 
+.quarter_select {
+    width: 90%;
+    border: solid 1px;
+    color: black;
+    padding: .5em 0em;
+    border-radius: 0.2em;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: .5em;
+    margin-left: .7em;
+    margin-bottom: 1em;
+    text-align-last: center;
+}
+
 #newKeyResultButton {
     background-color:#C4C4C4 ;
     color: black;
