@@ -4,11 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-.team_table {
-    width: 70%;
-    margin-left: 20em;
-    margin-top: 3em;
-}
+
 .title {
     height: 3em;
     background-color: #3f3f3f;
