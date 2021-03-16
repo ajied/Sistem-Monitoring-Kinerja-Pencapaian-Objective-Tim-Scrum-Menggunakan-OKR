@@ -5,15 +5,10 @@ body {
     margin: 0;
 }
 
-.hero-bg {
-    background: url('../img/ifferent-1612348893426-9878.jpg');
-    text-align: center;
-}
-
 header {
     font-weight: bold;
     font-size: large;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 /* login box still need fixing, cuz diffrent resolution make it braeking apart*/
@@ -29,35 +24,35 @@ header {
 
 .login-text {
     text-align: left;
-    padding-bottom: 2em;
+    padding-bottom: 0.5em;
 }
 
 .login-info {
     font-weight: bold;
     text-align: left;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 input[type="text"]{
     background-color:#CFCFCF;
     border: none;
     width: 100%;
-    padding: 1em;
+    padding: .5em;
     box-sizing: border-box;
-    border-radius: .5em;
+    border-radius: .2em;
     margin-top: 1.2em;
     margin-bottom: 1.2em; 
 }
 
 input[type="button"] {
-    background-color: #21134E;
-    width: 70%;
+    background-color: #354C9D;
+    width: 100%;
     border: none;
     color: white;
     font-weight: bold;
-    padding: 1em 0;
-    border-radius: .5em;
-    font-size: 1.3em;
+    padding: .5em 0;
+    border-radius: .2em;
+    font-size: 1em;
     cursor: pointer;
 }
 
