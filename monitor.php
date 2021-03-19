@@ -36,6 +36,13 @@
         </div>
     </nav>
 
+    <?php
+        $connection = mysqli_connect("localhost","root","","sistem_monitoring");
+        if (mysqli_connect_error()){
+            echo "Failed to connect to the database" .mysqli_connect_error();
+        };
+    ?>
+
     <div id="heading">
         <a href=#><img src="img/nav/threelines.png" onclick="openNav()" class=navicon></span></a>
         <div class="title">Planing dan Evaluasi Quarter 4</br> Badan Sistem Informasi</div>
