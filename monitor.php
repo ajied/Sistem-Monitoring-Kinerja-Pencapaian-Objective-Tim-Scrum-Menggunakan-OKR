@@ -41,6 +41,9 @@
         if (mysqli_connect_error()){
             echo "Failed to connect to the database" .mysqli_connect_error();
         };
+        $team_result = mysqli_query($connection, "SELECT * FROM team");
+        $objective_result = mysqli_query($connection, "SELECT * FROM objective");
+        $keyresult_result = mysqli_query($connection, "SELECT * FROM keyresult");
     ?>
 
     <div id="heading">
@@ -49,55 +52,62 @@
     </div>
 
     <div class="teamcontainer">
-        <div class="teamname">Team 1</div>
+        <div class="teamname">
+            <?php
+                $team = mysqli_fetch_array($team_result);
+                echo $team['team_name'];
+            ?>
+        </div>
         <div class="spacer"></div>
         <div class="quarterbox">Quarter</div>
     </div>
 
-<div class="table_container">
-    <table class="objective table table-bordered" style="width: 53%;">
-        <tr>
-            <td class="obj_title">Objective</td>
-            <td class="progress_title">Progress</td>
-        </tr>
-        <tr>
-            <td>Key result 1</td>
-            <td class="progressbar_percentage">
-                <div class="progress" style="border-radius: 0px;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Key result 1</td>
-            <td class="progressbar_percentage">
-                <div class="progress" style="border-radius: 0px;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Key result 1</td>
-            <td class="progressbar_percentage">
-                <div class="progress" style="border-radius: 0px;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                </div>
-            </td>
-        </tr>
-    </table>
+<?php
+    $objective = mysqli_fetch_array($objective_result);
+    do
+    {
+    echo "<div class='table_container'>
+            <table class='objective table table-bordered' style='width: 53%;'>
+                <tr>
+                    <td class='obj_title'>";
+                        
+                            
+                            echo $objective['objective_name'];
+                        
+        echo "      </td>
+                    <td class='progress_title'>Progress</td>
+                </tr>";
+                    $keyresult = mysqli_fetch_array($keyresult_result);
+                    do
+                    {
+                    echo "<tr>";
 
-    <table class="objective_fulfillment table table-bordered" style="width: 20%;">
-        <tr>
-            <td class="objfull_width">Objective fulfillment</td>
-        </tr>
-        <tr>
-            <td class="progressbar_percentage"  style="height: 49px;">
-                <div class="progress" style="border-radius: 0px;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                </div>
-            </td>
-        </tr>
-    </table>
+                            echo "<td>". $keyresult['keyresult_name']."</td>";
+
+                    echo "        <td class='progressbar_percentage'>";
+                    echo "          <div class='progress' style='border-radius: 0px;'>";
+                    echo "              <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'>25%</div>";
+                    echo "          </div>";
+                    echo "        </td>";
+                    echo "</tr>";
+                    } while($keyresult = mysqli_fetch_assoc($keyresult_result));
+            
+    echo "    </table>
+
+        <table class='objective_fulfillment table table-bordered' style='width: 20%;'>
+            <tr>
+                <td class='objfull_width'>Objective fulfillment</td>
+            </tr>
+            <tr>
+                <td class='progressbar_percentage'  style='height: 49px;'>
+                    <div class='progress' style='border-radius: 0px;'>
+                        <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'>25%</div>
+                    </div>
+                </td>
+            </tr>
+        </table>";
+    } while ($objective = mysqli_fetch_assoc($objective_result));
+?>
 
     <table class="quarter table table-bordered" style="width: 24%";>
         <tr>
