@@ -64,10 +64,7 @@
 
 <?php
 
-    $objective = mysqli_fetch_array($objective_result);
-    $keyresult = mysqli_fetch_array($keyresult_result);
-
-    do
+    while ($objective = mysqli_fetch_array($objective_result))
     {
         echo "<div class='table_container'>
                 <table class='objective table table-bordered' style='width: 53%;'>
@@ -79,7 +76,8 @@
         echo "          </td>
                         <td class='progress_title'>Progress</td>
                     </tr>";
-                        do
+                    
+                        while ($keyresult = mysqli_fetch_array($keyresult_result))
                         {
         echo "      <tr>";
                                
@@ -91,7 +89,7 @@
         echo "              </div>";
         echo "          </td>";
         echo "      </tr>";
-                        } while($keyresult = mysqli_fetch_assoc($keyresult_result));
+                        };
                 
         echo "  </table>
 
@@ -107,7 +105,7 @@
                         </td>
                     </tr>
                 </table>";
-    } while ($objective = mysqli_fetch_assoc($objective_result));
+    };
 ?>
 
     <table class="quarter table table-bordered" style="width: 24%";>
