@@ -38,9 +38,11 @@
 
     <?php
         $connection = mysqli_connect("localhost","root","","sistem_monitoring");
+
         if (mysqli_connect_error()){
             echo "Failed to connect to the database" .mysqli_connect_error();
         };
+
         $team_result = mysqli_query($connection, "SELECT * FROM team");
         $objective_result = mysqli_query($connection, "SELECT * FROM objective");
         $keyresult_result = mysqli_query($connection, "SELECT * FROM keyresult");
@@ -76,7 +78,7 @@
         echo "          </td>
                         <td class='progress_title'>Progress</td>
                     </tr>";
-                    
+
                         while ($keyresult = mysqli_fetch_array($keyresult_result))
                         {
         echo "      <tr>";
@@ -106,35 +108,36 @@
                     </tr>
                 </table>";
     };
-?>
 
-    <table class="quarter table table-bordered" style="width: 24%";>
-        <tr>
-            <td>JAN</td>
-            <td>FEB</td>
-            <td>MAR</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+
+    echo "  <table class='quarter table table-bordered' style='width: 24%';>
+                <tr>
+                    <td>JAN</td>
+                    <td>FEB</td>
+                    <td>MAR</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>";
+?>
 
 </div>
 
